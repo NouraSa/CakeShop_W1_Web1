@@ -1,0 +1,694 @@
+/*  Add your styling here */
+
+/************Header***********/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive;
+    background-color: #8a817c;
+}
+header img {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px ;
+    width: 40%;
+    border-radius: 50%;
+}
+.nav {
+    display: flex;
+    margin: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul {
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+}
+.nav li {
+    margin: 10px;
+    border-bottom: dotted #87556f;
+    border-width: thin;
+}
+.nav a {
+    text-decoration: none;
+    color:#322f3d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color:#f3e9dc ;
+    text-decoration: none;
+}
+
+/********** Slider **********/
+
+#slider figure img {
+    float: left;
+    width: 20%; 
+    height: 460px;
+    border-radius: 1%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    animation: slide;
+    width: 500%;
+    animation: slider 10s infinite;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    10% {
+        left: 0 ;
+    }
+    20% {
+        left: -100%;
+    }
+    30% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    50% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    70% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    90% {
+        left: -400%;
+    }
+    100% {
+        left: 0;
+    }
+}
+/************** Vegan Section**************/
+
+    p {
+        text-align: center;
+        text-decoration: underline #4b5d67;
+        padding: 10px;
+        height: 30px;
+        color: #59405c;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 1em;
+    }
+
+    .vegan {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: 30px;
+        max-width: 96%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .smallSections {
+        padding: 15px;
+        justify-content: center;
+        border: solid #4b5d67;
+        border-style: double;
+        margin-bottom: 5px;
+    }
+    .smallSections img {
+        width: 90%;
+        height: 370px;
+        padding-left: 10px;
+        padding-right: 10;
+        margin-right: 10px;
+        margin-left: 6px;
+        justify-content: center;
+    }
+    .vegan h3 {
+        font-size: 16px;
+        text-align: center;
+        color: #4b5d67;
+    }  
+
+/************ Social & Footer *************/
+    .social {
+        display: flex;
+        flex-direction:column;
+        width: 80%;
+        align-content: center;
+        margin: auto;
+    }
+    .social ul {
+        list-style: none;
+        display: flex;
+        flex-direction: raw;
+        justify-content: space-around;
+        margin-top: 18px;
+    }
+
+    .social img {
+        width: 50px;
+    }
+    .social h2 {
+        text-align: center;
+        color: #87556f;
+        font-size: 15px;
+    }
+    footer {
+        height: 50px;
+        text-align: center;
+        background-color: #322f3d;
+        margin: auto;
+    }
+    footer p {
+        display: inline-block;
+        font-size: 11px;
+        color:#f2e9e4;
+        background-color:transparent;
+        margin-top: 6px;
+    }
+
+/****** Media Queries***********/ 
+
+@media screen and (min-width:450px) { 
+    header img {
+        width: 350px;
+    }   
+    #slider figure img {
+        height: 990px;
+    }
+    .nav {
+        display: flex;
+        margin: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav ul {
+        flex-direction:column;
+    }
+    .nav li {
+        align-self: center;
+    }
+    .nav a {
+        text-decoration: none;
+        color:#322f3d;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .nav a:hover {
+        color:#f3e9dc ;
+        text-decoration: none;
+    }
+    .vegan {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 25px;
+        max-width: 98%;
+    }
+    p {
+        font-size: 20px;
+    }
+    .smallSections h3 {
+        font-size: 18px;
+    }
+    footer {
+        text-align: center;
+        background-color: #322f3d;
+        margin-top: 15px;
+    }
+    footer p {
+        display: inline-block;
+        margin: 10px;
+        padding: 5px;
+        font-size: 11px;
+        color: #f2e9e4;
+        background-color:transparent ;
+    }
+    .social {
+        margin: auto;
+
+    }
+    .social h2 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .social ul {
+        justify-content: center;
+    }
+    .social li {
+        margin: 15px;
+    }
+
+
+@media screen and (min-width:1100px) {
+
+    .nav ul {
+        flex-direction:row;
+    }
+    .nav li {
+        margin: 25px
+    }
+    .nav a {
+        text-decoration: none;
+        color:#322f3d;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    #slider figure img {
+    height: 998px;
+    }
+    P {
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+    }
+    .vegan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 25px;
+    max-width: 98%;
+    height: 600px;
+    }
+    .vegan img {
+    height: 550px;
+    }
+    
+    .social h2{
+        font-size: 30px;
+    }
+    
+/********  Customizing Page************/
+.otherpages {
+    background-image: url(/main.css/images/Cakes/baking.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    margin:0;
+    padding-bottom: 0;
+}
+.pagenav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 10px;
+    margin-right: 0;
+}
+
+.pagenav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+.pagenav a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #59405c;
+}
+.pagenav a:hover {
+    color:#f3e9dc;
+    text-decoration: none;
+}
+nav img {
+    width: 120px;
+    border-radius: 50%;
+}
+main {
+    background: transparent;
+    height: 80%;
+    padding-bottom: 0;
+}
+
+section, input, label, textarea {
+    font-size: 15px;
+    font-weight: bold;
+    color: #4b5d67;
+    background-color:#f3e9dc;
+    opacity: 0.6;
+    border-radius:5px ;
+    width: 600px;
+    }
+
+item {
+    display: block;
+    position: relative;
+    top: 90px;
+    left: 66px;
+    width: 600px;
+    height: 60px;
+    color:#59405c;
+    text-align: initial;
+    background-color: #8a817c;
+    font-size: 24px;
+    font-family: 'Architects Daughter', cursive;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 150vh;
+    margin-top: 100px;
+    margin-left: 50px;
+    overflow: hidden;
+    border-radius:5px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    border: solid #322f3d;
+    border-width: thin;
+    margin: 10px;
+    padding: 15px ;
+    margin-bottom: 20px;
+}
+
+
+textarea {
+    height: 200px;
+}
+
+form #button1 {
+    color:#f3e9dc ;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: #4b5d67;
+    opacity: 0.7;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form #button1:hover { 
+    background-color: #f3e9dc;
+    color: #4b5d67;
+}
+
+ .otherpages .social {
+    width: 100%;
+}
+.otherpages .social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: raw;
+}
+
+.otherpages .social img {
+    width: 50px;
+}
+.otherpages .social h2 {
+    text-align: center;
+    color: #87556f;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+/****** Customize page - Media queries*****
+@media screen and (min-width:450px) { 
+
+    .pagenav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    .pagenav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 10px;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+    }
+    .pagenav a {
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        color: #59405c;
+    }
+    .pagenav a:hover {
+        color:#f3e9dc;
+        text-decoration: none;
+    }
+    .pagenav img {
+        width: 40px;
+        border-radius: 50%;
+    }
+    main {
+        background: transparent;
+        height: 80%;
+        padding-bottom: 0;
+    }
+
+    section, input, label, textarea {
+        font-size: 15px;
+        font-weight: bold;
+        color: #4b5d67;
+        background-color:#f3e9dc;
+        opacity: 0.6;
+        border-radius:5px ;
+        width: 600px;
+        }
+
+    item {
+        display: block;
+        position: relative;
+        top: 90px;
+        left: 66px;
+        width: 600px;
+        height: 60px;
+        color:#59405c;
+        text-align: initial;
+        background-color: #8a817c;
+        font-size: 24px;
+        font-family: 'Architects Daughter', cursive;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    #myForm {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        height: 150vh;
+        margin-top: 100px;
+        margin-left: 50px;
+        overflow: hidden;
+        border-radius:5px;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+    .labels {
+        display: flex;
+        flex-direction: column;
+        border: solid #322f3d;
+        border-width: thin;
+        margin: 10px;
+        padding: 15px ;
+        margin-bottom: 20px;
+    }
+
+
+    textarea {
+        height: 200px;
+    }
+
+    form #button1 {
+        color:#f3e9dc ;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        margin-top: 20px;
+        background-color: #4b5d67;
+        opacity: 0.7;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    form #button1:hover { 
+        background-color: #f3e9dc;
+        color: #4b5d67;
+    }
+
+    .otherpages .social {
+        width: 100%;
+    }
+    .otherpages .social ul {
+        list-style: none;
+        display: flex;
+        flex-direction: raw;
+    }
+
+    .otherpages .social img {
+        width: 50px;
+    }
+    .otherpages .social h2 {
+        text-align: center;
+        color: #87556f;
+        font-size: 30px;
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+
+
+
+
+}
+*/
+
+/**************** our products************/
+
+.ourproductpage {
+    background-image: none;
+    height: 100%;
+    padding: 20px;
+    margin: 3px;
+}
+
+.container {
+    background-image: none;
+}
+
+.ourProducts {
+    height: 100px;
+}
+
+
+/*******Order Now pgae**********/
+
+.contactpage {
+    margin: 0;
+    background-image: url(/main.css/images/Cakes/baking.jpg);
+}
+.contactnav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contactnav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.contactnav a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #59405c;
+}
+    
+.contactnav a:hover {
+    color:#f3e9dc ;
+    text-decoration: none;
+}
+
+.container {
+    background-color: transparent;
+}
+
+.col-sm-8 {
+    border: solid red;
+    background-color: transparent;
+}
+
+
+    border-bottom: transparent;
+}
+.col-sm-4-fluid {
+    background-color: transparent;
+    border: solid blue;
+}
+/*
+.col-sm-4-fluid .social2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    height: 80px;
+    background-color: transparent;
+}
+.col-sm-4-fluid ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    width: 100%;
+}
+
+.col-sm-4-fluid img {
+    width: 35px;
+}
+.col-sm-4-fluid h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #87556f;
+}
+*/
+.contactpage footer {
+    position: relative;    
+    height: 50px;
+    width: 100%;
+    right: 0.5px;
+    align-self: center;
+    text-align: center;
+    background-color: #322f3d;
+    padding: 5px;
+    }
+    
+
+    .contactpage footer p {
+    padding: 5px;
+    }
+
+    
